@@ -1,3 +1,4 @@
-import os
+import pathlib
 
-ROOT = os.path.dirname(__file__)
+ROOT = pathlib.Path(__file__).parent
+DATA = pathlib.Path(ROOT, 'data', 'vacancies.json')
