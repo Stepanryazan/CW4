@@ -1,0 +1,227 @@
+{
+    "items": [
+        {
+            "id": "94120837",
+            "premium": false,
+            "name": "Python junior разработчик",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": true,
+            "area": {
+                "id": "2",
+                "name": "Санкт-Петербург",
+                "url": "https://api.hh.ru/areas/2"
+            },
+            "salary": {
+                "from": 50000,
+                "to": null,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": "Санкт-Петербург",
+                "street": "улица Зайцева",
+                "building": "41",
+                "lat": 59.880306,
+                "lng": 30.275363,
+                "description": null,
+                "raw": "Санкт-Петербург, улица Зайцева, 41",
+                "metro": null,
+                "metro_stations": [],
+                "id": "6150083"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2024-03-01T17:48:30+0300",
+            "created_at": "2024-03-01T17:48:30+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=94120837",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/94120837?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/94120837",
+            "relations": [],
+            "employer": {
+                "id": "5594124",
+                "name": "Скиллтеллект",
+                "url": "https://api.hh.ru/employers/5594124",
+                "alternate_url": "https://hh.ru/employer/5594124",
+                "logo_urls": {
+                    "240": "https://hhcdn.ru/employer-logo/5831662.jpeg",
+                    "90": "https://hhcdn.ru/employer-logo/5831661.jpeg",
+                    "original": "https://hhcdn.ru/employer-logo-original/1052753.jpeg"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=5594124",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Уверенные навыки написания кода на <highlighttext>Python</highlighttext>. Умение придумывать и реализовывать алгоритмы. Опыт работы с OpenCV, Numpy, Scipy. Хорошая математическая подготовка...",
+                "responsibility": "Разработка алгоритмов обработки данных полученных из разных источников (cv, нейросети, датчики и т.п.). Применение математических подходов для описания геометрически..."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "96",
+                    "name": "Программист, разработчик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "noExperience",
+                "name": "Нет опыта"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false,
+            "adv_context": null
+        },
+        {
+            "id": "93804724",
+            "premium": false,
+            "name": "Junior программист Python",
+            "department": null,
+            "has_test": false,
+            "response_letter_required": false,
+            "area": {
+                "id": "1",
+                "name": "Москва",
+                "url": "https://api.hh.ru/areas/1"
+            },
+            "salary": {
+                "from": 60000,
+                "to": 80000,
+                "currency": "RUR",
+                "gross": false
+            },
+            "type": {
+                "id": "open",
+                "name": "Открытая"
+            },
+            "address": {
+                "city": null,
+                "street": null,
+                "building": null,
+                "lat": null,
+                "lng": null,
+                "description": null,
+                "raw": null,
+                "metro": {
+                    "station_name": "Кунцевская",
+                    "line_name": "Арбатско-Покровская",
+                    "station_id": "3.69",
+                    "line_id": "3",
+                    "lat": 55.730673,
+                    "lng": 37.446522
+                },
+                "metro_stations": [
+                    {
+                        "station_name": "Кунцевская",
+                        "line_name": "Арбатско-Покровская",
+                        "station_id": "3.69",
+                        "line_id": "3",
+                        "lat": 55.730673,
+                        "lng": 37.446522
+                    },
+                    {
+                        "station_name": "Кунцевская",
+                        "line_name": "Филевская",
+                        "station_id": "4.471",
+                        "line_id": "4",
+                        "lat": 55.730815,
+                        "lng": 37.446754
+                    },
+                    {
+                        "station_name": "Кунцевская",
+                        "line_name": "Большая кольцевая линия",
+                        "station_id": "97.810",
+                        "line_id": "97",
+                        "lat": 55.730278,
+                        "lng": 37.445833
+                    }
+                ],
+                "id": "15158873"
+            },
+            "response_url": null,
+            "sort_point_distance": null,
+            "published_at": "2024-02-26T15:04:20+0300",
+            "created_at": "2024-02-26T15:04:20+0300",
+            "archived": false,
+            "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=93804724",
+            "show_logo_in_search": null,
+            "insider_interview": null,
+            "url": "https://api.hh.ru/vacancies/93804724?host=hh.ru",
+            "alternate_url": "https://hh.ru/vacancy/93804724",
+            "relations": [],
+            "employer": {
+                "id": "224839",
+                "name": "ПерилаГлавСнаб",
+                "url": "https://api.hh.ru/employers/224839",
+                "alternate_url": "https://hh.ru/employer/224839",
+                "logo_urls": {
+                    "original": "https://hhcdn.ru/employer-logo-original/1186817.png",
+                    "90": "https://hhcdn.ru/employer-logo/6367690.png",
+                    "240": "https://hhcdn.ru/employer-logo/6367691.png"
+                },
+                "vacancies_url": "https://api.hh.ru/vacancies?employer_id=224839",
+                "accredited_it_employer": false,
+                "trusted": true
+            },
+            "snippet": {
+                "requirement": "Уверенное знание <highlighttext>Python</highlighttext>. Уверенное знание SQL(PSQL, MSSQL). Умение работать с FastAPI. Умение работать с Git. Знание SQLAlchemy. ",
+                "responsibility": "Поддержка микросервисов. Разработка интеграций с внешними и внутренними сервисами. Участие в разработке моделей по прогнозированию."
+            },
+            "contacts": null,
+            "schedule": {
+                "id": "fullDay",
+                "name": "Полный день"
+            },
+            "working_days": [],
+            "working_time_intervals": [],
+            "working_time_modes": [],
+            "accept_temporary": false,
+            "professional_roles": [
+                {
+                    "id": "96",
+                    "name": "Программист, разработчик"
+                }
+            ],
+            "accept_incomplete_resumes": false,
+            "experience": {
+                "id": "between1And3",
+                "name": "От 1 года до 3 лет"
+            },
+            "employment": {
+                "id": "full",
+                "name": "Полная занятость"
+            },
+            "adv_response_url": null,
+            "is_adv_vacancy": false,
+            "adv_context": null
+        }
+    ],
+    "found": 514,
+    "pages": 257,
+    "page": 0,
+    "per_page": 2,
+    "clusters": null,
+    "arguments": null,
+    "fixes": null,
+    "suggests": null,
+    "alternate_url": "https://hh.ru/search/vacancy?area=113&enable_snippets=true&items_on_page=2&text=python+junior"
+}

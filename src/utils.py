@@ -1,51 +1,29 @@
-from collections import defaultdict
-from src.CompareVacancies import CompareVacancies
+from src.Vacancy import Vacancy
+from src.Head_Hunter import HeadHunter
+from src.JSONSaver import JSONSaver
+import os
+from config import ROOT
 
 
-class UserInteraction(CompareVacancies):
-    def __init__(self, name_vacancy):
-        super().__init__(name_vacancy)
-        self.get_vacancy_from_api()
-        self.vacancies_list = defaultdict(list)
-
-    def __str__(self):
-        self.message = "Vacancy not found" if len(self.all_vacancy) == 0 else self.message
-        return (f"Name of vacancy for search: {self.name_vacancy}\n"
-                f"Count vacancies: {len(self.all_vacancy)}\n"
-                f"Status: {self.message}")
-
-    def make_info(self, top_salary: dict) -> list:
-        """
-        Created list with vacancies for user.
-        :param top_salary: dict with vacancies
-        user wants to see
-        :return: list with vacancies.
-        """
-        print(f"Top salary:")
-
-        count = 1
-        for top, vacancies in top_salary.items():
-
-            print(f"{count}. Top sallary {top} - count {len(vacancies)}", end='\n')
-
-            for value in vacancies:
-                self.vacancies_list[count].extend([{"Name of vacancy": value['name']},
-                                                   {"Salary from": value['salary']['from']},
-                                                   {"Salary to": value['salary']['to']},
-                                                   {"City": value['area']['name']},
-                                                   {"URL": f"{value['alternate_url']}\n"}])
-            count += 1
-
-    @staticmethod
-    def last_info(top_salary: dict, number_of_vacancies: int):
-        """
-            Get info about top vacancies
-            :param number_of_vacancies: number of vacancy from top
-            :param top_salary: dict with top vacancies
-        """
-        print()
-        info = []
-        for params_vacancy in top_salary[int(number_of_vacancies)]:
-            for key, val in params_vacancy.items():
-                info.append("{0}: {1}".format(key, val))
-        return '\n'.join(info)
+def user_interaction():
+    """
+    Функция взаимодействия с пользователем
+    """
+    search_query = str(input("Введите поисковый запрос: "))
+    top_n = int(input("Введите количество вакансий для вывода в топ N: "))
+    city = str(input("Введите город: "))
+    salary = int(input("Введите минимальную зарплату: "))
+    hh_api = HeadHunter()
+    hh_vacancies = hh_api.get_vacancies(search_query, top_n)
+    hh_json = JSONSaver()
+    hh_json.add_vacancy(hh_vacancies)
+    json_file = os.path.join(ROOT, 'data', 'hh.json')
+    data = hh_json.get_vacancy(json_file)
+    ranged_vacancies = Vacancy.get_vacancies_by_salary(data, salary)
+    filtered_salary = Vacancy.get_vacancies_by_city(ranged_vacancies, city)
+    Vacancy.cast_to_object_list(filtered_salary)
+    if not Vacancy.vacancies_list:
+        print("\nПодходящих вакансий не найдено")
+    else:
+        print("\nСписок подходящих вакансий: ")
+        Vacancy.print_vacancies(Vacancy.vacancies_list)
